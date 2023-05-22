@@ -1,5 +1,266 @@
+/* General css style */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0 auto;
+}
+
+.container {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.description_text {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #969696;
+}
+
+.display_none {
+  display: none;
+}
+
+.logo_icon {
+  width: 4rem;
+  height: 5rem;
+  display: none;
+}
+
+.sub_nav_desktop {
+  display: none;
+}
+
+.header_navbar_links {
+  display: none;
+}
+
+.section_hero {
+  background-image: url(./img/hero-bg-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.hero_text_box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.heading_primary {
+  background-image: url(./img/text_background.png);
+  background-size: cover;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  font-size: 4rem;
+  font-weight: 900;
+  color: transparent;
+}
+
+.sub_heading_primary {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.hero_description {
+  background-color: rgb(250, 250, 250);
+  padding: 1.2rem;
+  border: solid white 2px;
+}
+
+.secondary-hero-text {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #565656;
+}
+
+.address-text {
+  font-size: 2rem;
+  color: #969696;
+}
+
+.mobile_menu {
+  height: 8rem;
+  font-size: 5.2rem;
+  color: #969696;
+  cursor: pointer;
+  padding-bottom: 4rem;
+}
+
+.cross_icon {
+  font-size: 4.8rem;
+}
+
+.section_main_program {
+  background-image: url(./img/feature_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+}
+
+.main_program_header {
+  display: block;
+  font-size: 2.4rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.main_program_header::after {
+  display: inline-block;
+  content: ' ';
+  width: 8rem;
+  padding-bottom: 2px;
+  background-color: #ec5242;
+}
+
+.programs_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+}
+
+.programs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: #9696962a;
+}
+
+.program_header {
+  font-size: 2.4rem;
+  color: #ec5242;
+}
+
+.program_description {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.program_more_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem 2.4rem;
+  font-size: 1.6rem;
+  color: white;
+  margin-top: 2rem;
+  background-color: #ec5242;
+}
+
+@media (min-width: 786px) {
+  .container {
+    width: 82%;
+  }
+
+  .sub_nav_desktop {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 5px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    height: 5vh;
+    color: rgb(192, 192, 192);
+  }
+
+  .sub_nav_box {
+    background-color: rgb(46, 46, 46);
+  }
+
+  .logo_icon {
+    display: block;
+  }
+
+  .mobile_menu {
+    display: none;
+  }
+
+  .cross_icon {
+    display: none;
+  }
+
+  .header_nav_box {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header_navbar_links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .navbar_items {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #2b2b2b;
+  }
+
+  .navbar_items:hover {
+    cursor: pointer;
+    color: #ec5242;
+  }
+
+  .last_nav {
+    border: 2px solid #ec5242;
+    color: #ec5242;
+    padding: 0.5rem 1rem;
+  }
+
+  .section_hero {
+    background-image: url(./img/hero-bg-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+  }
+
+  /* some thids  */
+  .hero_text_box {
+    display: grid;
+    grid-template-columns: 0.6fr;
+    padding-top: 2rem;
+  }
+
+  .heading_primary {
+    font-size: 6.4rem;
+  }
+
+  .programs_container {
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 0.5rem;
+  }
+
+  .programs {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .program_more_link {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    text-decoration: underline;
+    color: white;
+    background-color: transparent;
+  }
 }
