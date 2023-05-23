@@ -51,7 +51,7 @@ const featureSpeaker = (data) => `
   </div>
 `;
 
-let speakerContainer = document.querySelector('.speakers_container');
+const speakerContainer = document.querySelector('.speakers_container');
 speaker.forEach((data) => {
   speakerContainer.innerHTML += featureSpeaker(data);
 });
