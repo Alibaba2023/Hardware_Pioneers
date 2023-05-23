@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  width: 88%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -51,7 +51,7 @@ body {
   background-image: url(./img/hero-bg-mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  padding-bottom: 6rem;
 }
 
 .hero_text_box {
@@ -61,10 +61,12 @@ body {
 }
 
 .heading_primary {
-  background-image: url(./img/text_background.png);
+  background-image: url(./img/bgletters.jpg);
   background-size: cover;
   background-clip: content-box;
   -webkit-background-clip: text;
+  font-family: 'Bakbak', sans-serif;
+  line-height: 1;
   font-size: 4rem;
   font-weight: 900;
   color: transparent;
@@ -79,6 +81,7 @@ body {
   background-color: rgb(250, 250, 250);
   padding: 1.2rem;
   border: solid white 2px;
+  color: #565656;
 }
 
 .secondary-hero-text {
@@ -89,7 +92,7 @@ body {
 
 .address-text {
   font-size: 2rem;
-  color: #969696;
+  color: #565656;
 }
 
 .mobile_menu {
@@ -108,26 +111,29 @@ body {
   background-image: url(./img/feature_background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 2rem;
 }
 
 .main_program_header {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   font-size: 2.4rem;
-  text-align: center;
   color: white;
-  margin-bottom: 3rem;
+  padding: 3rem 0;
 }
 
 .main_program_header::after {
-  display: inline-block;
+  display: block;
   content: ' ';
-  width: 8rem;
-  padding-bottom: 2px;
+  width: 5rem;
+  padding-bottom: 3px;
   background-color: #ec5242;
 }
 
 .programs_container {
+  padding: 6rem 0;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 1rem;
@@ -142,25 +148,111 @@ body {
   background-color: #9696962a;
 }
 
+.programs:hover {
+  transform: scale(1.03);
+}
+
 .program_header {
   font-size: 2.4rem;
   color: #ec5242;
 }
 
 .program_description {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  letter-spacing: 2.1px;
   color: white;
 }
 
 .program_more_link {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 2.4rem 2.4rem;
   font-size: 1.6rem;
+  text-decoration: underline;
+  padding-bottom: 6rem;
   color: white;
-  margin-top: 2rem;
-  background-color: #ec5242;
+}
+
+.speakers_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 5rem;
+  column-gap: 5rem;
+  padding: 5rem 0;
+}
+
+.speaker_detail_box {
+  display: grid;
+  grid-template-columns: 10rem auto;
+  column-gap: 3rem;
+}
+
+.speakers_image_box {
+  position: relative;
+  height: 12rem;
+  width: 12rem;
+}
+
+.speaker_image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+  z-index: 2;
+}
+
+.speaker_background_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  z-index: 1;
+}
+
+.speaker_detail_text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.speaker_feature_header {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.speaker_position {
+  font-size: 1.6rem;
+  color: #ec5242;
+}
+
+.speaker_position::after {
+  display: block;
+  content: ' ';
+  width: 2rem;
+  padding-bottom: 3px;
+  background-color: #969696;
+}
+
+.speaker_description {
+  font-size: 1.6rem;
+  color: #565656;
+}
+
+.speakers_header {
+  color: #565656;
+}
+
+.see_more_btn {
+  padding: 1.4rem 2.8rem;
+  border: solid black 1px;
+  display: block;
+  text-align: center;
+  font-size: 2.4rem;
+  color: black;
+  margin-bottom: 3rem;
+}
+
+.partners {
+  display: none;
 }
 
 @media (min-width: 786px) {
@@ -230,13 +322,13 @@ body {
     background-image: url(./img/hero-bg-desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 95vh;
   }
 
   /* some thids  */
   .hero_text_box {
     display: grid;
-    grid-template-columns: 0.6fr;
+    grid-template-columns: 0.7fr;
     padding-top: 2rem;
   }
 
@@ -255,12 +347,35 @@ body {
     align-items: center;
   }
 
-  .program_more_link {
+  .speakers_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5rem;
+    column-gap: 5rem;
+  }
+
+  .see_more_btn {
+    display: none;
+  }
+
+  .partners {
+    background-color: #444;
+    display: block;
+  }
+
+  .partner_image {
+    background-color: transparent;
+    opacity: 80%;
+    height: 5rem;
+    width: 15rem;
+    filter: grayscale(50%);
+  }
+
+  .partner_items_box {
     display: flex;
     justify-content: center;
-    font-size: 1.6rem;
-    text-decoration: underline;
-    color: white;
-    background-color: transparent;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 6rem;
   }
 }
