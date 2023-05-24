@@ -1,7 +1,7 @@
-const hamburgerIcon =document.querySelector('.mobile_menu');
-const crossIcon =document.querySelector('.cross_icon');
-const menuList =document.querySelectorAll('.mobile_navbar_items');
-const mobileMenuPopup =document.querySelector('.mobile_menu_popup');
+const hamburgerIcon = document.querySelector('.mobile_menu');
+const crossIcon = document.querySelector('.cross_icon');
+const menuList = document.querySelectorAll('.mobile_navbar_items');
+const mobileMenuPopup = document.querySelector('.mobile_menu_popup');
 
 hamburgerIcon.addEventListener('click', () => {
   mobileMenuPopup.classList.remove('display_none');
@@ -37,7 +37,7 @@ const speaker = [
     speakerDescription: 'Neuromophic front-end chip for signal per-processing in sensor nodes',
   },
   {
-    speakerImage: './img/speaker_photo6.jpg',
+    speakerImage: './img/speaker_photo4.jpg',
     speakerName: 'Pasi Myllymaki',
     speakerPosition: 'Marketing manager',
     speakerDescription: 'Neuromophic front-end chip for signal per-processing in sensor nodes',
@@ -74,5 +74,3 @@ const speakerContainer = document.querySelector('.speakers_container');
 speaker.forEach((data) => {
   speakerContainer.innerHTML += featureSpeaker(data);
 });
-
-
