@@ -1,3 +1,22 @@
+const hamburgerIcon =document.querySelector('.mobile_menu');
+const crossIcon =document.querySelector('.cross_icon');
+const menuList =document.querySelectorAll('.mobile_navbar_items');
+const mobileMenuPopup =document.querySelector('.mobile_menu_popup');
+
+hamburgerIcon.addEventListener('click', () => {
+  mobileMenuPopup.classList.remove('display_none');
+});
+
+crossIcon.addEventListener('click', () => {
+  mobileMenuPopup.classList.add('display_none');
+});
+
+menuList.forEach((element) => {
+  element.addEventListener('click', () => {
+    mobileMenuPopup.classList.add('display_none');
+  });
+});
+
 const speaker = [
   {
     speakerImage: './img/speaker_photo4.jpg',
@@ -55,3 +74,5 @@ const speakerContainer = document.querySelector('.speakers_container');
 speaker.forEach((data) => {
   speakerContainer.innerHTML += featureSpeaker(data);
 });
+
+

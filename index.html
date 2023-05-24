@@ -14,7 +14,7 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
   <title>Hardware Pioneers</title>
 </head>
 
@@ -29,27 +29,26 @@
         <li>Logout</li>
       </ul>
     </div>
-    <nav class="header_nav_box container">
-      <div class="header_logo_icon"><img src="./img/main_logo.png" alt="Hardware Pioneers logo" class="logo_icon">
+    <nav class="header_nav_box">
+      <div class="header_logo_icon"><img src="./img/new_logo.png" alt="Hardware Pioneers logo" class="logo_icon">
       </div>
-      <!-- <div class="header_close_icon"><ion-icon name="close-outline" class="cross_icon"></div> -->
       <ul class="header_navbar_links">
-        <li><a href="#" class="navbar_items">About</a></li>
-        <li><a href="#" class="navbar_items">Speakers</a></li>
-        <li><a href="#" class="navbar_items">Agenda</a></li>
-        <li><a href="#" class="navbar_items">News</a></li>
-        <li><a href="#" class="navbar_items last_nav">Hardware Pioneers</a></li>
+        <li><a href="./about.html" class="navbar_items">About</a></li>
+        <li><a href="./index.html" class="navbar_items">Speakers</a></li>
+        <li><a href="./index.html" class="navbar_items">Agenda</a></li>
+        <li><a href="./index.html" class="navbar_items">News</a></li>
+        <li><a href="./index.html" class="navbar_items last_nav">Hardware Pioneers</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="section_hero">
+    <section class="section_hero" id="section_hero">
       <div class="container">
         <div class="humbarger_icon"><ion-icon name="menu-outline" class="mobile_menu"></ion-icon></div>
         <div class="hero_text_box">
-          <h1 class="heading_primary"><span class="sub_heading_primary">"Hello! Sharing world"<br></span>The Hardware
-            Pioneers<br>Max
-            2023</h1>
+          <h1 class="heading_primary heading_primary_about"><span class="sub_heading_primary">"Hello! Sharing
+              world"<br></span>The Hardware
+            Pioneers Max 2023</h1>
           <p class="description_text hero_description">
             Join UK's largest exhibition and conference dedicated to cutting-edge technologies, solutions and tools for
             innovation-driven engineering teams.
@@ -63,7 +62,7 @@
         </div>
       </div>
     </section>
-    <section class="section_main_program">
+    <section class="section_main_program" id="section_main_program">
       <div class="container">
         <p class="main_program_header">
           Main Program
@@ -103,7 +102,7 @@
         <a class="program_more_link" href="#">SEE THE WHOLE PROGRAM</a>
       </div>
     </section>
-    <section class="section_speakers">
+    <section class="section_speakers" id="section_speakers">
       <div class="container">
         <p class="speakers_header main_program_header">
           Featured Speakers
@@ -131,8 +130,27 @@
       </div>
     </section>
   </main>
-  <footer
+  <footer>
+    <div class="container footer_section">
+      <p class="footer_description">VENUE ADDRESS
+        Business Design Centre: <br>
+        52 Upper Street, London, N1 0QH<br>
+        OPENING TIMES: <br>
+        Exhibition & conference: 09:45 - 18:00 <br>
+        After-party drinks: 18:00 - 21:00</p>
+      <p class="footer_description">2023 Hardware Pioneers Max. Some Rights Reserved.</p>
+    </div>
   </footer>
+  <div class="mobile_menu_popup display_none">
+    <div class="header_close_icon container"><ion-icon name="close-outline" class="cross_icon"></div>
+    <ul class="mobile_menu_pages container">
+      <li><a href="./about.html" class="mobile_navbar_items">About</a></li>
+      <li><a href="#section_speakers" class="mobile_navbar_items">Speakers</a></li>
+      <li><a href="#section_main_program" class="mobile_navbar_items">Agenda</a></li>
+      <li><a href="#" class="mobile_navbar_items">News</a></li>
+      <li><a href="./index.html" class="mobile_navbar_items last_nav">Hardware Pioneers</a></li>
+    </ul>
+  </div>
   <script src="./main.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
