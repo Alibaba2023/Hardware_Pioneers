@@ -203,6 +203,11 @@ body {
   color: white;
 }
 
+.section_speakers {
+  background-color: #d3d3d3;
+  padding: 2rem 0;
+}
+
 .speakers_container {
   display: grid;
   grid-template-columns: 1fr;
@@ -279,7 +284,6 @@ body {
   text-align: center;
   font-size: 2.4rem;
   color: black;
-  margin-bottom: 3rem;
 }
 
 .partners {
@@ -316,6 +320,10 @@ body {
 
 .footer_description {
   font-size: 1.6rem;
+}
+
+footer {
+  background-color: #d3d3d3;
 }
 
 @media (min-width: 786px) {
@@ -450,14 +458,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 6rem 0;
-  }
-
-  .section_speakers {
-    background-color: #d3d3d3;
-  }
-
-  footer {
-    background-color: #d3d3d3;
   }
 
   .mobile_menu_popup {
