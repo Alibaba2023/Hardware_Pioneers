@@ -341,7 +341,8 @@ body {
 
   .past_event_image_box {
     grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
+    align-items: center;
+    column-gap: 1rem;
   }
 
   .mobile_menu_popup {

@@ -1,101 +1,241 @@
-# HTML & CSS3 & JavaScript Course
+<a name="readme-top"></a>
 
-If you are not familiar with linters, read [root level README](../README.md).
+<div align="center">
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <img src="" alt="logo" width="140"  height="auto" />
+  <br/>
 
-## Set-up GitHub Actions
+  <h3><b>Hardware Pioneers</b></h3>
 
-Please do the following **steps in this order**:
+</div>
 
-1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
-   - **Remember** to use the file linked above
-   - **Remember** that `.github` folder starts with a dot.
-2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-3. When you open your first pull request you should see the result of the GitHub actions checks:
+<!-- TABLE OF CONTENTS -->
 
-![gh actions checks](../assets/images/gh-actions-html-css-checks.png)
+# 📗 Table of Contents
 
-Click on the `Details` link of each action to see the full output and the errors that need to be fixed:
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[Hardware Pioneers\] ](#-hardware-pioneers-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-![gh actions failing checks](../assets/images/gh-actions-html-css-failing-checks.png)
+<!-- PROJECT DESCRIPTION -->
 
-## Set-up linters in your local env
+# 📖 [Genius Academy] <a name="about-project"></a>
 
-**Note**: The `npm` package manager is going to create a `node_modules` directory to install all of your dependencies. You shouldn't commit that directory. To avoid that, you can create a [`.gitignore`](https://git-scm.com/docs/gitignore) file and add `node_modules` to it:
+**[Genius Academy]** is my first Capstone project that mimics a real-world project.
+
+## 🛠 Built With <a name="built-with"></a>
+
+1. ✅ **HTML**
+2. ✅ **CSS**
+3. ✅ **JavaScript**
+4. ✅ **LightHouse**
+5. ✅ **WebHint**
+6. ✅ **Styelint**
+7. ✅ **ESLint**
+8. ✅ **Git**
+9. ✅ **Github**
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+-  **[Home page]**
+-  **[About Page]**
+-  **[Menu Section]**
+-  **[Responsive]**
+-  **[Good look and feel]**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- ✅ You can see the live demo of this webpage by clicking [here](https://alibaba2023.github.io/Hardware_Pioneers/);
+
+<!-- - [Live Demo Link](https://google.com) -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+**To get a local copy up and running, follow these steps.**
+
+1. Download or clone this [repostory](https://github.com/Alibaba2023/Hardware_Pioneers).
+2. Provide a browser.
+3. Open the `index.html` file using webpage browser.
+
+### Prerequisites
+
+**In order to run this project you need:**
+
+- ✔ [Git](https://git-scm.com/downloads) installed in your machine.
+- ✔ Sign in or sign up to your [Github](https://github.com/) account.
+- ✔ A professional editer such as [VS Code](https://code.visualstudio.com/download).
+- ✔ An Updated web browser such as Google Chrome, you can download it from [here](https://www.google.com/chrome/).
+- ✔ [Node.js](https://nodejs.org/en/download) installed in your machine.
+- ✔ Lighthouse.
+- ✔ Webhint
+
+```sh
+npm init -y
+npm install --save-dev hint@7.x
+npx hint .
+```
+
+- ✔ Stylelint
+
+```sh
+npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+```
+
+- ✔ ESLint
+
+```sh
+npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+```
+
+### Setup
+
+- Clone this [repository](git@github.com:Alibaba2023/Hardware_Pioneers.git) to your desired folder:
+
+- Example commands:
+
+```sh
+  cd [YOUR FOLDER]
+  git clone git@github.com:Alibaba2023/Hardware_Pioneers.git
+```
+
+### Install
+
+- Install this project by cloning or downloading the master branch of this [repository](https://github.com/Alibaba2023/Hardware_Pioneers) and run `index.html` file on the root of repository.
+
+### Usage
+
+- To run the project, execute the following command:
+
+```sh
+ cd [YOUR FOLDER]
+ git clone https://github.com/Alibaba2023/Hardware_Pioneers
+```
+
+### Run tests
+
+1. WebHint ☑
 
 ```
-# .gitignore
-node_modules/
+npx hint .
 ```
 
-### [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+2. Stylelint ☑
 
-An open-source, automated tool for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO and more.
+```
+npx stylelint "**/*.{css,scss}"
+```
 
-You can get the Lighthouse report by any of the following ways:
+3. ESLint ☑
 
-- [In Chrome DevTools](https://developers.google.com/web/tools/lighthouse#devtools)
-- [From the command line](https://developers.google.com/web/tools/lighthouse#cli)
-- [As a Node module](https://developers.google.com/web/tools/lighthouse#programmatic)
-- [From a web UI](https://developers.google.com/web/tools/lighthouse#psi)
+```
+npx eslint .
+```
 
-To access the report generated by Lighthouse on your pull request, click the `Details` link for the `Linters/Lighthouse` check and you will see the full output of the action:
+### Deployment
 
-![lighthouse report](../assets/images/lighthouse-report.png)
+**This project is deployed by the author, no permission for deployment by any other client.**
 
-### [Webhint](https://webhint.io/)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-A customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors.
+<!-- AUTHORS -->
 
-**NOTE:** If you are running on Windows, you need to initialize npm to create `package.json` file. 
-   ```
-   npm init -y
-   ```
+## 👥 Authors <a name="authors"></a>
 
-1. Run
-   ```
-   npm install --save-dev hint@7.x
-   ```
-   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
-2. Copy [.hintrc](.hintrc) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run
-   ```
-   npx hint .
-   ```
-5. Fix validation errors.
+👤 **Ali Baba Hussaini (Main Author)**
 
-### [Stylelint](https://stylelint.io/)
+- GitHub: [@Alibaba2023](https://github.com/Alibaba2023)
+- Twitter: [@AliBabaHu2023](https://twitter.com/AliBabaHu2023)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ali-baba-hussaini-630607267/)
 
-A mighty, modern linter that helps you avoid errors and enforce conventions in your styles.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-1. Run
+<!-- FUTURE FEATURES -->
 
-   ```
-   npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-   ```
+## 🔭 Future Features <a name="future-features"></a>
 
-   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
+- [ ] **[Client interaction]**
+- [ ] **[Deploy to a universal server]**
 
-2. Copy [.stylelintrc.json](./.stylelintrc.json) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/usage/options) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### [ESLint](https://eslint.org/)
+<!-- CONTRIBUTING -->
 
-1. Run 
-   ```
-   npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
-   ``` 
-   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
+## 🤝 Contributing <a name="contributing"></a>
 
-2. Copy [.eslintrc.json](./.eslintrc.json) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx eslint .` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Eslint](https://eslint.org/docs/latest/user-guide/command-line-interface#fixing-problems) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Alibaba2023/Hardware_Pioneers/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, kindly drop a start for the [repository](https://github.com/Alibaba2023/Hardware_Pioneers);
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank [Microverse](https://www.microverse.org/?grsf=mohammad-a-nbtazu) for providing the opportunity for this project to be done And my family for thier support.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](MIT.md) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
