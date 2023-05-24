@@ -2,7 +2,7 @@
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-    <img src="./img/hero_readme.png" alt="logo" width="140"  height="auto" />
+    <img src="./img/hero_readme.jpg" alt="logo" width="140"  height="auto" />
   <br/>
   <h3><b>Hardware Pioneers</b></h3>
 
