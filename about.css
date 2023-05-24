@@ -191,7 +191,7 @@ body {
 }
 
 .partners {
-  background-color: #000;
+  /* background-color: #000; */
   display: block;
 }
 
@@ -251,6 +251,10 @@ body {
 
 .display_none {
   display: none;
+}
+
+footer {
+  background-color: #272a31;
 }
 
 @media (min-width: 786px) {
@@ -347,5 +351,9 @@ body {
 
   .mobile_menu_popup {
     display: none;
+  }
+
+  footer {
+    background-color: #272a31;
   }
 }

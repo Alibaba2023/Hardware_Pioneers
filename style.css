@@ -452,6 +452,14 @@ body {
     padding: 6rem 0;
   }
 
+  .section_speakers {
+    background-color: #d3d3d3;
+  }
+
+  footer {
+    background-color: #d3d3d3;
+  }
+
   .mobile_menu_popup {
     display: none;
   }
