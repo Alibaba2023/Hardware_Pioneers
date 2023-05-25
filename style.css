@@ -1,4 +1,6 @@
-/* General css style */
+/* ******************************
+******   GENERAL STYLES    ******
+******************************* */
 * {
   padding: 0;
   margin: 0;
@@ -32,6 +34,10 @@ body {
 .display_none {
   display: none;
 }
+
+/* *****************************
+********** NAVBAR SECTION ******
+******************************* */
 
 .logo_icon {
   height: 7rem;
@@ -73,6 +79,24 @@ body {
   color: #fff;
   text-decoration: underline;
 }
+
+.mobile_menu {
+  height: 8rem;
+  font-size: 5.2rem;
+  color: #969696;
+  cursor: pointer;
+  padding-bottom: 4rem;
+}
+
+.cross_icon {
+  font-size: 4.8rem;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+/* *****************************
+********** HERO SECTION ******
+******************************* */
 
 .section_hero {
   background-image: url(./img/hero-bg-mobile.png);
@@ -122,19 +146,9 @@ body {
   color: #565656;
 }
 
-.mobile_menu {
-  height: 8rem;
-  font-size: 5.2rem;
-  color: #969696;
-  cursor: pointer;
-  padding-bottom: 4rem;
-}
-
-.cross_icon {
-  font-size: 4.8rem;
-  color: #fff;
-  margin-bottom: 4rem;
-}
+/* *****************************
+**********PROGRAMS SECTION ******
+******************************* */
 
 .section_main_program {
   background-image: url(./img/feature_background.jpg);
@@ -202,6 +216,10 @@ body {
   padding-bottom: 6rem;
   color: white;
 }
+
+/* *****************************
+********** SPEAKER SECTION ******
+******************************* */
 
 .section_speakers {
   background-color: #d3d3d3;
@@ -286,6 +304,10 @@ body {
   color: black;
 }
 
+/* *****************************
+**********PARTNERS SECTION ******
+******************************* */
+
 .partners {
   background-color: #444;
   display: block;
@@ -306,6 +328,10 @@ body {
   padding-bottom: 6rem;
 }
 
+/* *****************************
+********** FOOTER SECTION ******
+******************************* */
+
 .footer_section {
   display: flex;
   flex-direction: column;
@@ -325,6 +351,10 @@ body {
 footer {
   background-color: #d3d3d3;
 }
+
+/* **********************************
+********** BREAK POINT (786PX) ******
+********************************** */
 
 @media (min-width: 786px) {
   .container {
