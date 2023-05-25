@@ -238,8 +238,9 @@ body {
 
 .footer_section {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  gap: 3rem;
   padding: 6rem 0;
 }
 
@@ -353,6 +354,11 @@ footer {
 
   .mobile_menu_popup {
     display: none;
+  }
+
+  .footer_section {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   footer {
