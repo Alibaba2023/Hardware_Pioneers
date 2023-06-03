@@ -34,9 +34,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Genius Academy] <a name="about-project"></a>
+# 📖 [Hardware Pioneers] <a name="about-project"></a>
 
-**[Genius Academy]** is my first Capstone project that mimics a real-world project.
+**[Hardware Pioneers]** is my first Capstone project that mimics a real-world project.
 
 ## 🛠 Built With <a name="built-with"></a>
 
